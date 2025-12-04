@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aventura — Estação Nebulosa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main>
+
+        <!-- PASSO 0 -->
+        <div class="passo ativo" id="passo-0">
+            <img src="img/cena1.jpg">
+            <p>Você desperta em uma sala desconhecida dentro da Estação Nebulosa. As luzes piscam lentamente.</p>
+            <button class="btn-proximo" data-proximo="1">Explorar a sala</button>
+            <button class="btn-proximo" data-proximo="2">Sair pelo corredor</button>
+        </div>
+
+        <!-- PASSO 1 -->
+        <div class="passo" id="passo-1">
+            <img src="img/cena1.jpg">
+            <p>Você examina a sala e encontra um painel quebrado. Nada aqui parece ajudar.</p>
+            <button class="btn-proximo" data-proximo="2">Ir para o corredor</button>
+            <button class="btn-proximo" data-proximo="0">Voltar ao início</button>
+        </div>
+
+        <!-- PASSO 2 -->
+        <div class="passo" id="passo-2">
+            <img src="img/cena2.jpg">
+            <p>O corredor está silencioso. Duas portas estão destrancadas: uma leva ao Centro de Controle e outra ao Hangar.</p>
+            <button class="btn-proximo" data-proximo="3">Centro de Controle</button>
+            <button class="btn-proximo" data-proximo="4">Hangar</button>
+        </div>
+
+        <!-- PASSO 3 -->
+        <div class="passo" id="passo-3">
+            <img src="img/cena2.jpg">
+            <p>No Centro de Controle você vê apenas telas apagadas. Nada funcional. Este caminho não ajuda muito.</p>
+            <button class="btn-proximo" data-proximo="2">Voltar ao corredor</button>
+        </div>
+
+        <!-- PASSO 4 -->
+        <div class="passo" id="passo-4">
+            <img src="img/cena3.jpg">
+            <p>Você chega ao Hangar e encontra uma pequena nave ainda ativa. Parece sua chance de escapar.</p>
+            <button class="btn-proximo" data-proximo="5">Entrar na nave</button>
+            <button class="btn-proximo" data-proximo="2">Voltar ao corredor</button>
+        </div>
+
+        <!-- PASSO 5 — FINAL -->
+        <div class="passo" id="passo-5">
+            <img src="img/cena3.jpg">
+            <p>A nave decola e você finalmente escapa da Estação Nebulosa. Você sobreviveu!</p>
+            <button class="btn-proximo" data-proximo="0">Recomeçar a aventura</button>
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
