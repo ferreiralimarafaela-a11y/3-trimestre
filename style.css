@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+main {
+    max-width: 700px;
+    margin: auto;
+    padding: 20px;
+}
+
+.passo {
+    display: none;
+    text-align: center;
+}
+
+.passo.ativo {
+    display: block;
+}
+
+img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    background: #3a74d1;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1rem;
+}
+
+button:hover {
+    background: #2f5ca5;
+}
